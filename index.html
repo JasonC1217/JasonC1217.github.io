@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jason Chen | Data Scientist & Neurobiology Researcher</title>
+  <title>Jason Chen | Data Science & Neuroscience</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,7 +28,7 @@
 
     section {
       padding: 20px 40px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background: white;
       margin-top: 20px;
@@ -43,17 +43,35 @@
       font-size: 0.9em;
       color: #666;
     }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Jason Chen</h1>
-    <p>MS Data Science @ UC San Diego · Neurobiology · Machine Learning</p>
+    <p>Data Scientist | Neurobiology & Cognitive Science | UC San Diego</p>
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#research">Research</a>
       <a href="#teaching">Teaching</a>
       <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -61,45 +79,107 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm a Master's student in Data Science at UC San Diego, with a BS in Neurobiology and Cognitive Science. I specialize in machine learning, single-cell multiomics, and brain research in the context of HIV and opioid use disorder.
+      I'm a Master's student in Data Science at UC San Diego, with a background in Neurobiology and Cognitive Science. My research focuses on integrating machine learning with single-cell multiomics to uncover transcriptional and epigenetic changes in the brain due to HIV infection and opioid use disorder. I’m passionate about combining biology, statistics, and computational tools to understand complex neurological diseases and improve human health.
     </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>MS in Data Science</strong>, UC San Diego (2023–Present) <br/>
+        GPA: 3.8 · Courses: Machine Learning, High-Dimensional Stats, Linear Algebra, Responsible Data Science
+      </li>
+      <li>
+        <strong>BS in Neurobiology & Cognitive Science</strong>, UC San Diego (2019–2023)<br/>
+        GPA: 3.7 · Specialization: Machine Learning and Neural Computation
+      </li>
+    </ul>
   </section>
 
   <section id="research">
     <h2>Research Experience</h2>
     <ul>
-      <li><strong>Graduate Student Researcher</strong>, UCSD SCORCH (Mukamel Lab)<br/>
-        Multiomic analysis of HIV and OUD effects in brain regions using snRNA-seq and snATAC-seq. Focus on TF networks and co-regulated modules.
+      <li>
+        <strong>Graduate Researcher, Mukamel Lab (SCORCH Consortium)</strong><br/>
+        - Analyze snRNA-seq and snATAC-seq data from human brain tissue (amygdala, PFC, cerebellum)<br/>
+        - Identify differentially expressed genes and transcription factor networks disrupted by HIV and OUD<br/>
+        - Integrate transcriptomic and epigenomic data using SCENIC+, SnapATAC2, and pycisTopic
       </li>
-      <li><strong>Research Intern</strong>, Scripps Research (Stowers Lab)<br/>
-        Machine learning on time-series neural data and facial expression patterns in mice.
+      <li>
+        <strong>Research Intern, Stowers Lab @ Scripps Research</strong><br/>
+        - Applied ML to mouse facial expression and neural time-series data<br/>
+        - Modeled links between facial dynamics and social behavior
       </li>
-      <li><strong>Research Assistant</strong>, UCSD (Ruiz)<br/>
-        Collected and organized smoking cessation data for clinical research.
+      <li>
+        <strong>Research Assistant, Ruiz Lab</strong><br/>
+        - Collected and cleaned clinical trial data for smoking cessation interventions
       </li>
+    </ul>
+
+    <h3>Research Project Highlight</h3>
+    <p><em>Single-Cell Determinants of Brain Vulnerability to HIV and Opioids</em> (SCORCH, 1U01DA053630-01)<br/>
+    Working with PIs Eran Mukamel, Tariq Rana, Kyle Gaulton, and Allen Wang to uncover cell-type-specific dysregulation in the amygdala and PFC using multiomic approaches.</p>
+
+    <h3>Presentations</h3>
+    <ul>
+      <li><strong>Poster:</strong> "HIV and OUD: A Single-Cell Multiomic Study of the Human Amygdala", SCORCH Summer Meeting 2024</li>
+      <li><strong>Poster:</strong> "Transcriptomic and Epigenomic Impacts of HIV and OUD Across PFC Cell Types", SCORCH Summer Meeting 2024</li>
     </ul>
   </section>
 
   <section id="teaching">
     <h2>Teaching Experience</h2>
     <ul>
-      <li>TA for COGS 118A/B (Machine Learning), COGS 108 (Data Science), COGS 17 (Neurobiology)</li>
-      <li>Automated grading tools, supported students in office hours & discussion sections</li>
+      <li>
+        <strong>Teaching Assistant</strong>, COGS 118A: Supervised ML Algorithms & COGS 118B: Intro to ML<br/>
+        UC San Diego · <em>Jul 2024 – Sep 2024</em>
+        <ul>
+          <li>Ensured smooth course operations and provided timely support</li>
+          <li>Developed scripts to automate late penalties and grade syncing with Canvas</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Instructional Assistant</strong>, COGS 108: Data Science in Practice<br/>
+        UC San Diego · <em>Sep 2022 – Dec 2022, Sep 2023 – Dec 2023, Mar 2025 – Present</em>
+        <ul>
+          <li>Optimized autograding scripts and held office hours and discussions</li>
+          <li>Provided hands-on support and improved grading workflows</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Instructional Assistant</strong>, COGS 17: Neurobiology of Cognition<br/>
+        UC San Diego · <em>Sep 2021 – Dec 2021, Jan 2024 – Mar 2024, Mar 2024 – Jun 2024, Sep 2024 – Dec 2024, Jan 2025 – Mar 2025</em>
+        <ul>
+          <li>Held office hours, facilitated discussion groups, and improved student comprehension</li>
+          <li>Created tailored teaching materials for complex topics</li>
+        </ul>
+      </li>
     </ul>
   </section>
+  
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Course Projects</h2>
     <ul>
-      <li><a href="https://github.com/JasonC1217/Jason-Chen-Projects" target="_blank">GitHub Portfolio</a> – ML classification, dimensionality reduction, pandemic modeling, and more.</li>
+      <li><strong>Deep Neural Networks for Cell Type Classification</strong> – 95% accuracy on scRNA-seq data (BIPN 162)</li>
+      <li><strong>Star Spectral Classification</strong> – ML models (KNN, DNN) to classify star types (COGS 118A)</li>
+      <li><strong>H1N1 Impact Analysis</strong> – Stats-based analysis of pandemic impact on global birth/death rates (COGS 108)</li>
     </ul>
+    <p>See full portfolio: <a href="https://github.com/JasonC1217/Jason-Chen-Projects" target="_blank">GitHub Projects</a></p>
+  </section>
+
+  <section id="cv">
+    <h2>My CV</h2>
+    <p>View my full academic CV below (embedded PDF):</p>
+    <iframe src="Jason_Chen_CV.pdf"></iframe>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:xic007@ucsd.edu">xic007@ucsd.edu</a></p>
-    <p>GitHub: <a href="https://github.com/JasonC1217">github.com/JasonC1217</a></p>
-    <p>Location: La Jolla, CA</p>
+    <p><strong>Email:</strong> <a href="mailto:xic007@ucsd.edu">xic007@ucsd.edu</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/JasonC1217">github.com/JasonC1217</a></p>
+    <p><strong>Location:</strong> La Jolla, CA</p>
   </section>
 
   <footer>
