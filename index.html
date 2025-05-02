@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jason Chen | Data Science & Neuroscience</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-
     html {
       scroll-behavior: smooth;
     }
@@ -26,20 +25,32 @@
       text-align: center;
     }
 
-    nav a {
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      background-color: #182B49;
+      z-index: 1000;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .sticky-nav a {
       color: #cce6ff;
       margin: 0 15px;
       text-decoration: none;
+      font-weight: 500;
     }
 
     section {
-      padding: 20px 40px;
+      padding: 40px;
       max-width: 900px;
       margin: auto;
       background: white;
       margin-top: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px #ccc;
+      scroll-margin-top: 80px;
     }
 
     footer {
@@ -65,6 +76,33 @@
       border: none;
       margin-top: 20px;
     }
+
+    .floating-email-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #182B49;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1001;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .floating-email-btn i {
+      margin-right: 10px;
+    }
+
+    .floating-email-btn:hover {
+      background-color: #0f1c34;
+    }
   </style>
 </head>
 <body>
@@ -76,18 +114,17 @@
       </div>
       <img src="jason_photo.jpeg" alt="Jason Chen" style="width:140px; height:140px; object-fit: cover; border-radius: 50%;">
     </div>
-    <nav style="margin-top: 20px;">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#research">Research</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#projects">Projects</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
-  
-  
+
+  <nav class="sticky-nav">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <section id="about">
     <h2>About Me</h2>
@@ -154,7 +191,6 @@
       <li><strong>Poster:</strong> "Transcriptomic and Epigenomic Impacts of HIV and OUD Across PFC Cell Types", SCORCH Summer Meeting 2024</li>
     </ul>
   </section>
-  
 
   <section id="teaching">
     <h2>Teaching Experience</h2>
@@ -185,7 +221,6 @@
       </li>
     </ul>
   </section>
-  
 
   <section id="projects">
     <h2>Course Projects</h2>
@@ -213,5 +248,9 @@
   <footer>
     <p>&copy; 2025 Jason Chen</p>
   </footer>
+
+  <a href="mailto:xic007@ucsd.edu" class="floating-email-btn">
+    <i class="fas fa-envelope"></i> Email
+  </a>
 </body>
 </html>
