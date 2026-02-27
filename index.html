@@ -22,8 +22,49 @@
     header {
       background-color: #182B49;
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .header-text {
+      margin-right: 30px;
+      text-align: left;
+    }
+
+    .header-text h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5em;
+    }
+
+    .header-text p {
+      margin: 5px 0;
+      font-size: 1.1em;
+      color: #cce6ff;
+    }
+
+    .header-links {
+      margin-top: 15px;
+    }
+
+    .header-links a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    .header-links a:hover {
+      color: #a3d1ff;
     }
 
     .sticky-nav {
@@ -31,16 +72,21 @@
       top: 0;
       background-color: #182B49;
       z-index: 1000;
-      padding: 10px 0;
+      padding: 12px 0;
       text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .sticky-nav a {
       color: #cce6ff;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: 500;
+      font-size: 0.95em;
+    }
+
+    .sticky-nav a:hover {
+      color: white;
     }
 
     section {
@@ -48,27 +94,38 @@
       max-width: 900px;
       margin: auto;
       background: white;
-      margin-top: 20px;
+      margin-top: 25px;
       border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       scroll-margin-top: 80px;
     }
 
     footer {
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       margin-top: 40px;
       font-size: 0.9em;
       color: #666;
     }
 
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
+      border-bottom: 2px solid #edf2f7;
+      padding-bottom: 10px;
+      color: #182B49;
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #2c4a7c;
+      margin-top: 30px;
     }
 
     ul {
       padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
     }
 
     iframe {
@@ -76,6 +133,8 @@
       height: 700px;
       border: none;
       margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
     }
 
     .floating-email-btn {
@@ -104,33 +163,44 @@
     .floating-email-btn:hover {
       background-color: #0f1c34;
     }
+
+    .skills-category {
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
-      <div style="margin-right: 20px; text-align: left;">
+    <div class="header-content">
+      <div class="header-text">
         <h1>Xinze (Jason) Chen</h1>
-        <p>Data Scientist | Neurobiology & Cognitive Science | UC San Diego</p>
+        <p>Data Scientist | Incoming PhD Student in Biomedical Sciences @ Penn State</p>
+        <p>MS in Data Science @ UC San Diego</p>
+        <div class="header-links">
+          <a href="https://orcid.org/0009-0006-4886-1426" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
+          <a href="https://github.com/JasonC1217" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="mailto:xic007@ucsd.edu"><i class="fas fa-envelope"></i> xic007@ucsd.edu</a>
+        </div>
       </div>
-      <img src="jason_photo.jpeg" alt="Jason Chen" style="width:140px; height:140px; object-fit: cover; border-radius: 50%;">
+      <img src="jason_photo.jpeg" alt="Jason Chen" style="width:150px; height:150px; object-fit: cover; border-radius: 50%; border: 4px solid #304e82;">
     </div>
   </header>
 
   <nav class="sticky-nav">
     <a href="#about">About</a>
     <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
     <a href="#research">Research</a>
     <a href="#teaching">Teaching</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm a Master's student in Data Science at UC San Diego, with a background in Neurobiology and Cognitive Science. My research focuses on integrating machine learning with single-cell multiomics to uncover transcriptional and epigenetic changes in the brain due to HIV infection and opioid use disorder. I’m passionate about combining biology, statistics, and computational tools to understand complex neurological diseases and improve human health.
+      I'm a Data Scientist and incoming PhD student in Biomedical Sciences at Pennsylvania State University, currently completing my Master's in Data Science at UC San Diego with a background in Neurobiology and Cognitive Science. My research focuses on integrating machine learning with single-cell multiomics to uncover transcriptional and epigenetic changes in the brain due to HIV infection and opioid use disorder. I’m passionate about combining biology, statistics, and computational tools to understand complex neurological diseases and improve human health.
     </p>
   </section>
 
@@ -138,12 +208,26 @@
     <h2>Education</h2>
     <ul>
       <li>
-        <strong>MS in Data Science</strong>, UC San Diego (2023–Present) <br/>
+        <strong>PhD in Biomedical Sciences</strong>, Pennsylvania State University (Aug 2026 – Jun 2031)
+      </li>
+      <li>
+        <strong>MS in Data Science</strong>, UC San Diego (Sep 2023 – Jun 2026) <br/>
         GPA: 3.8 · Specialization: Bioinformatics, Genetics, Machine Learning, High-Dimensional Statistics
       </li>
       <li>
-        <strong>BS in Neurobiology & Cognitive Science</strong>, UC San Diego (2019–2023)<br/>
+        <strong>BS in Neurobiology & Cognitive Science</strong>, UC San Diego (Sep 2019 – Jun 2023)<br/>
         GPA: 3.7 · Specialization: Machine Learning and Neural Computation
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        Green, A.¹, Vashist, T.¹, Jakhmola, S.¹, <strong>Chen, X.</strong>², Baidwan, G.², Buchanan, J.², Tiwari, S., Griffin, E., Howell, A., Lee, Y., Moore, D., Gianella, S., Smith, D., Zhu, Q., Walss-Bass, C., Wang, A.*, Mukamel, E. A.*, Gaulton, K. J.*, Rana, T. M.* <br/><em>Cell-type specific impact of opioid use disorder and HIV on the human forebrain and cerebellum.</em>
+        <br/><span style="color: #c0392b; font-weight: 500;">• Manuscript under review at Nature.</span>
+        <br/><span style="font-size: 0.9em; color: #555;">¹ Co-first authors; ² Co-second authors; * Co-corresponding authors.</span>
       </li>
     </ul>
   </section>
@@ -152,22 +236,32 @@
     <h2>Research Experience</h2>
   
     <div style="margin-bottom: 25px;">
-      <strong>Graduate Researcher, Mukamel Lab (SCORCH Consortium)</strong><br/>
+      <strong>Graduate Student Researcher, Mukamel Lab (SCORCH Consortium)</strong><br/>
       <em>UC San Diego · Jan 2024 – Present</em>
       <ul>
-        <li>Developed and automated full single-cell RNA-seq and ATAC-seq analysis pipelines for human brain tissue (amygdala, PFC, cerebellum), including QC, clustering, differential analysis, and visualization</li>
-        <li>Identified cell-type-specific DEGs and differentially accessible regions linked to HIV infection and opioid use disorder (OUD)</li>
-        <li>Integrated gene expression and chromatin accessibility using SCENIC+ to infer transcription factor networks and co-regulated gene modules across brain regions</li>
-        <li>Applied SnapATAC2 and pycisTopic for peak calling, topic modeling, and motif enrichment in a region- and cell-type-specific manner</li>
+        <li>Investigating the epigenomic and transcriptomic effects of HIV and opioid use disorder on the human brain (amygdala, prefrontal cortex, and cerebellum)</li>
+        <li>Built standardized pipelines to process and analyze multiomic sequencing data, including single-nucleus RNA-seq (snRNA-seq) and ATAC-seq (snATAC-seq)</li>
+        <li>Identified differentially expressed genes and chromatin accessibility regions, uncovering genetic and epigenetic markers relevant to neurological diseases</li>
+        <li>Integrated chromatin accessibility and gene expression data for inferring transcription factor regulatory networks</li>
+        <li>Identified co-regulated gene modules and cell-type-specific transcriptional programs disrupted by HIV and opioid exposure</li>
       </ul>
     </div>    
   
     <div style="margin-bottom: 25px;">
+      <strong>Graduate Student Researcher, Smarr Lab</strong><br/>
+      <em>UC San Diego · Jul 2025 – Sep 2025</em>
+      <ul>
+        <li>Processed and analyzed continuous glucose monitoring (CGM) data</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 25px;">
       <strong>Research Intern, Stowers Lab</strong><br/>
       <em>Scripps Research · Sep 2022 – Jun 2023</em>
       <ul>
-        <li>Applied machine learning to mouse facial expression and neural time-series data</li>
-        <li>Modeled the relationship between facial dynamics and social behavior</li>
+        <li>Applied machine learning models to analyze neural activity and facial movements in mice</li>
+        <li>Utilized machine learning algorithms and traditional data science techniques to process and analyze time-series data from mouse experiments</li>
+        <li>Produced valuable insights into mice neural circuitry and facial expression associated with social behaviors</li>
       </ul>
     </div>
   
@@ -181,15 +275,16 @@
   
     <h3>Research Project Highlight</h3>
     <ul>
-      <li><strong>Single-Cell Determinants of Brain Vulnerability to HIV and Opioids</strong> (SCORCH, 1U01DA053630-01)<br/>
-        Collaborating with PIs Eran Mukamel, Tariq Rana, Kyle Gaulton, and Allen Wang to uncover cell-type-specific dysregulation in the Cerebellum, Amygdala and Prefrontal Cortex using multiomic approaches.
+      <li><strong>Revealing the single cell determinants of brain relevant to persistent HIV infection and opioid use disorder</strong> (UCSD SCORCH Rana, 1U01DA053630-01)<br/>
+        <em>PIs: Tariq Rana, PhD; Eran Mukamel, PhD; Kyle Gaulton, PhD; Allen Wang, PhD</em><br/>
+        Utilized snRNA-seq and snATAC-seq to analyze gene expression and chromatin accessibility. Performed integrative gene regulatory network (GRN) analysis to identify transcriptional rewiring across HIV and OUD conditions to uncover molecular mechanisms underlying neuropsychiatric disorders and identify therapeutic targets.
       </li>
     </ul>
   
-    <h3>Presentations</h3>
+    <h3>Posters & Presentations</h3>
     <ul>
-      <li><strong>Poster:</strong> "HIV and OUD: A Single-Cell Multiomic Study of the Human Amygdala", SCORCH Summer Meeting 2024</li>
-      <li><strong>Poster:</strong> "Transcriptomic and Epigenomic Impacts of HIV and OUD Across PFC Cell Types", SCORCH Summer Meeting 2024</li>
+      <li><strong>Poster:</strong> "HIV and Opioid Use Disorder: A Single-Cell Multiomic Study of the Human Amygdala", SCORCH Summer Meeting, Baltimore, MD (Jun 2024)</li>
+      <li><strong>Poster:</strong> "The Transcriptomic and Epigenomic Impacts of HIV and Opioid Use Disorder Across Human Prefrontal Cortex Cell Types", SCORCH Summer Meeting, Baltimore, MD (Jun 2024)</li>
     </ul>
   </section>
 
@@ -198,29 +293,45 @@
     <ul>
       <li>
         <strong>Teaching Assistant</strong>, COGS 118A: Supervised ML Algorithms & COGS 118B: Intro to ML<br/>
-        UC San Diego · <em>Jul 2024 – Sep 2024</em>
+        UC San Diego · <em>Jul 2024 – Sep 2024, Jul 2025 – Sep 2025</em>
         <ul>
-          <li>Ensured smooth course operations and provided timely support</li>
-          <li>Developed scripts to automate late penalties and grade syncing with Canvas</li>
+          <li>Ensured smooth course operations, provided timely student support, and streamlined grading processes</li>
+          <li>Developed scripts to manage late penalties automatically and sync grades from GradeScope to Canvas</li>
         </ul>
       </li>
       <li>
         <strong>Instructional Assistant</strong>, COGS 108: Data Science in Practice<br/>
-        UC San Diego · <em>Sep 2022 – Dec 2022, Sep 2023 – Dec 2023, Mar 2025 – Present</em>
+        UC San Diego · <em>Sep 2022 – Dec 2022, Sep 2023 – Dec 2023, Mar 2025 – Jun 2025, Sep 2025 – Dec 2025</em>
         <ul>
-          <li>Optimized autograding scripts and held office hours and discussions</li>
-          <li>Provided hands-on support and improved grading workflows</li>
+          <li>Assisted with course materials and automated grading processes to improve efficiency</li>
+          <li>Developed and optimized auto-grading scripts and provided hands-on support during office hours and discussion sections</li>
         </ul>
       </li>
       <li>
         <strong>Instructional Assistant</strong>, COGS 17: Neurobiology of Cognition<br/>
-        UC San Diego · <em>Sep 2021 – Dec 2021, Jan 2024 – Mar 2024, Mar 2024 – Jun 2024, Sep 2024 – Dec 2024, Jan 2025 – Mar 2025</em>
+        UC San Diego · <em>Sep 2021 – Dec 2021, Jan 2024 – Mar 2024, Mar 2024 – Jun 2024, Sep 2024 – Dec 2024, Jan 2025 – Mar 2025, Jan 2026 – Mar 2026</em>
         <ul>
-          <li>Held office hours, facilitated discussion groups, and improved student comprehension</li>
-          <li>Created tailored teaching materials for complex topics</li>
+          <li>Assisted with course materials and prepared personalized materials for discussion sections</li>
+          <li>Held office hours to clarify difficult concepts, facilitated group discussions, and helped organize learning materials</li>
         </ul>
       </li>
     </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-category">
+      <strong>Data Science, Bioinformatics, & Machine Learning:</strong> Python, R, MATLAB, pandas, NumPy, scikit-learn, PyTorch, TensorFlow, ScanPy, Seurat, ArchR, SnapATAC2, SCENIC+, chromVAR, MACS3, bedtools, samtools, deepTools
+    </div>
+    <div class="skills-category">
+      <strong>Single-Cell & Genomics Analysis:</strong> snRNA-seq preprocessing/QC, snATAC-seq peak calling and integration, multiomic (RNA-ATAC) integration, transcription factor motif analysis, gene regulatory network (GRN) inference, differential expression and accessibility analysis, BigWig generation, genome browser visualization
+    </div>
+    <div class="skills-category">
+      <strong>Computational & Statistical Skills:</strong> High-dimensional data analysis, nonlinear dimensionality reduction, Leiden/Louvain clustering, signal processing, time-series analysis, mixed models and GLMs, data visualization (matplotlib, seaborn, ggplot2)
+    </div>
+    <div class="skills-category">
+      <strong>Software & Tools:</strong> Git, Jupyter, LaTeX, SLURM/HPC environments, Docker, VS Code
+    </div>
   </section>
 
   <section id="projects">
@@ -241,13 +352,15 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:xic007@ucsd.edu">xic007@ucsd.edu</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/JasonC1217">github.com/JasonC1217</a></p>
-    <p><strong>Location:</strong> La Jolla, CA</p>
+    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:xic007@ucsd.edu">xic007@ucsd.edu</a></p>
+    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 858-868-0185</p>
+    <p><i class="fab fa-orcid"></i> <strong>ORCID:</strong> <a href="https://orcid.org/0009-0006-4886-1426" target="_blank">0009-0006-4886-1426</a></p>
+    <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/JasonC1217" target="_blank">github.com/JasonC1217</a></p>
+    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> La Jolla, CA</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Jason Chen</p>
+    <p>&copy; 2026 Jason Chen</p>
   </footer>
 
   <a href="mailto:xic007@ucsd.edu" class="floating-email-btn">
